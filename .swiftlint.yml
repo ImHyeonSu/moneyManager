@@ -1,0 +1,25 @@
+# 비활성화할 규칙
+disabled_rules:
+  - trailing_whitespace  # 줄 끝 공백 검사 비활성화
+  - line_length         # 줄 길이 제한 비활성화
+
+# 활성화할 규칙
+opt_in_rules:
+  - empty_count         # count == 0 대신 isEmpty 사용
+  - missing_docs       # 문서화 주석 필수
+
+# 줄 길이 제한 설정
+line_length:
+  warning: 120
+  error: 200
+
+# 파일 길이 제한
+file_length:
+  warning: 400
+  error: 1000
+
+# 검사에서 제외할 파일
+excluded:
+  - Pods
+  - Carthage
+  - Generated
